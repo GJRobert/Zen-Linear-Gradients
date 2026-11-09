@@ -1,0 +1,11 @@
+/* 側邊欄獨立漸層。
+   Zen 平常把 .zen-toolbar-background 設為 display: none（只有緊湊模式才顯示），
+   所以正常模式下側邊欄只是視窗背景漸層的一部分。這裡讓它在側邊欄裡顯示，
+   並把 background-attachment: fixed 改回 scroll，漸層就以側邊欄自身為範圍。 */
+#navigator-toolbox > #zen-toolbar-background {
+  display: block !important;
+}
+#navigator-toolbox .zen-toolbar-background::before,
+#navigator-toolbox .zen-toolbar-background::after {
+  background-attachment: scroll !important;
+}

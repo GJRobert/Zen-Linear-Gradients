@@ -1,0 +1,16 @@
+{
+  "id": "zen-linear-gradients",
+  "name": "Zen Linear Gradients",
+  "description": "Restore multi-stop linear gradients (all colors, custom angle) and a separate sidebar gradient in Zen 1.24.x.",
+  "version": "0.1.0",
+  "author": "GJRobert",
+  "scripts": {
+    "zen-linear-gradients.uc.js": {
+      "include": ["chrome://browser/content/browser.xhtml"]
+    }
+  },
+  "style": { "chrome": "chrome.css" },
+  "fork": ["zen"],
+  "no-updates": true,
+  "enabled": true
+}
